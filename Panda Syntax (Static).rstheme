@@ -110,6 +110,7 @@ textarea.GD15MCFCFVC.GD15MCFCFVC-readonly {
   color: rgb(225,225,225);
 }
 
+
 /*Options Dialog Box*/
 
 .rstudio-themes-flat .gwt-DialogBox {
@@ -231,13 +232,45 @@ img[src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAcCAYAAABoMT8aAAAAW
   background: #ffcc95;
 }
 
+
 /* Matched bracket*/
-.ace_marker-layer .ace_bracket {
+
+/* In Console Frame*/
+/*
+div#rstudio_console_input .ace_marker-layer .ace_bracket {
+  height: 12px !important;
+  top: 1px !important;
+  width:6px !important;
   margin: -1px 0 0 -1px;
   border: 1px solid #19f9d8;
   border-radius: 0px !important;
 }
+*/
 
+div.ace_layer.ace_marker-layer {
+  overflow: visible;
+}
+
+div.ace_scoller {
+  overflow: visible;
+}
+
+div#rstudio_console_input {
+  overflow: visible;
+}
+
+div#rstudio_shell_widget {
+  overflow: visible;
+}
+
+/* In Notepad Frame */
+.ace_marker-layer .ace_bracket {
+  z-index: 6;
+  overflow: visible !important;
+  margin: -1px 0 0 -1px;
+  border: 1px solid #19f9d8;
+  border-radius: 0px !important;
+}
 /* The line the cursor is on */
 .ace_marker-layer .ace_active-line {
   background: #31353a;

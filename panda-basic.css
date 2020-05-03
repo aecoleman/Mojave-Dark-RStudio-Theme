@@ -1,0 +1,122 @@
+
+/* STRING */
+/* String constants in the editor. */
+/* Any text surrounded by " or ' */
+.ace_string {
+  color: #19f9d8;
+}
+
+/* IDENTIFIER */
+/* Basic text in the editor. */
+/* E.g. the text used to represent symbols */
+.ace_identifier {
+  color: #e6e6e6; /* normal-text */
+}
+
+/* FUNCTION */
+/* Function calls in the editor. */
+/* E.g., "sum" in "sum()" */
+.ace_identifier.ace_support.ace_function {
+  color: #45a9f9; /* dark blue text */
+}
+
+/* CLASS */
+/* Namespaces referenced by :: in the editor. */
+/* E.g., "dplyr" in "dplyr::mutate" */
+.ace_identifier.ace_support.ace_class {
+  color: #b084eb; /* purple text */
+}
+
+/* KEYWORD */
+/* Special language-defined keywords in the editor. */
+/* E.g., library, function, break, if, else, while, for */
+.ace_keyword {
+  color: #ff75b5; /* pink text */
+}
+
+/* KEYWORD OPERATOR */
+/* Binary operators in the editor. */
+/* E.g., arithmetic operators "+", "-", "*" , "^", "/", "%%", "%/%" */
+/* And also other functional operators, like "::", "$", "@", "<-" */
+.ace_keyword.ace_operator {
+  color: #6fc1ff; /* light blue text */
+}
+
+/* KEYWORD OPERATOR INFIX */
+/* Pipe operator */
+/* E.g., %>% */
+.ace_keyword.ace_operator.ace_infix {
+  color: #6fc1ff; /* light blue text */
+}
+
+/* KEYWORD OPERATOR PUNCTUATION */
+/* Language punctuation */
+/* E.g., commas separating function arguments */
+.ace_keyword.ace_operator.ace_punctuation {
+  color: #cdcdcd; /* bright text */
+}
+
+/* KEYWORD OPERATOR PAREN */
+/* Language parens, brackets, and braces */
+/* (), {}, and [] */
+.ace_keyword.ace_operator.ace_paren {
+  color: #cdcdcd; /* bright text */
+}
+
+/* CONSTANT NUMERIC */
+/* Numeric constants in the editor. */
+/* E.g., 123 or 1L */
+.ace_constant.ace_numeric {
+  color: #ffb86c; /* Orange Text */
+}
+
+/* CONSTANT LANGUAGE */
+/* Constants defined as part of the language */
+/* E.g, TRUE, FALSE, NA, NULL */
+.ace_constant.ace_language {
+  color: #ffb86c; /* Orange Text */
+}
+
+/* COMMENT */
+/* Comments in code */
+/* All text after "#" */
+.ace_comment {
+  color: #ff75b5; /* Dark Text */
+  font-style: italic;
+}
+
+/* COMMENT SECTIONHEAD */
+/* Comments that end in ---- or similar */
+.ace_comment.ace_sectionhead {
+  color: #ff85b5;
+  font-weight: bold;
+}
+
+/* INVISIBLE WHITESPACE CHARACTERS*/
+/* Spaces, tabs, and other characters which should nearly blend in with the background */
+.ace_invisible.ace_invisible_space, .ace_invisible.ace_invisible_eol {
+  color: #49483e; /* Hidden Text */
+}
+
+/* INDENT GUIDE */
+/* Horizontal line showing amount of indentation */
+.ace_indent-guide {
+  margin-left:-1px;
+  border-right: 1px dotted #49483e;
+}
+
+/* CURSOR */
+/* The cursor marking where typed characters will be placed */
+.ace_cursor {
+  border-left: 1px solid;
+  border-color: #ff2c6d; /* Bright Red */
+}
+
+/* ACTIVE LINE */
+/* The line containing the cursor in the editor */
+.ace_layer.ace_marker-layer .ace_active-line {
+  background: #31353a; /* Lighter Background */
+}
+
+
+
